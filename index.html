@@ -32,6 +32,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
     <title>Simple Landing Page</title>
     <script>
         tailwind.config = {
@@ -46,9 +49,17 @@
     </script>
 
     <style>
-        .shared-button{
-            background-color: red;
-            padding: 5px;
+        .shared-button {
+            background-color: rgb(218, 51, 51);
+            padding-left: 15px;
+            padding-right: 15px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            border-radius: 8px;
+            color: white;
+        }
+        .fontManrope{
+            font-family: "Manrope", serif;
         }
     </style>
 </head>
@@ -56,8 +67,8 @@
 
 
 
-<body>
-    <header>
+<body class="fontManrope">
+    <header class="max-w-screen-xl mx-auto">
         <nav>
             <div class="navbar bg-base-100">
                 <div class="navbar-start">
@@ -70,8 +81,8 @@
                             </svg>
                         </div>
                         <ul tabindex="0"
-                            class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
-                            <li><a href="">Home</a></li>
+                            class="menu menu-sm dropdown-content bg-base-100 font-bold text-base rounded-box z-[1] mt-3 w-52 p-2 shadow">
+                            <li><a href="" >Home</a></li>
                             <li><a href="">About</a></li>
                             <li><a href="">Pages</a></li>
                             <li><a href="">Blog</a></li>
@@ -79,10 +90,10 @@
 
                         </ul>
                     </div>
-                    <a class="btn btn-ghost text-xl">Hockey's</a>
+                    <a class="text-4xl font-extrabold">Hockey<span class="text-red-500">’</span>s</a>
                 </div>
                 <div class="navbar-center hidden lg:flex">
-                    <ul class="menu menu-horizontal px-1">
+                    <ul class="menu menu-horizontal px-1 font-bold text-base">
                         <li><a href="">Home</a></li>
                         <li><a href="">About</a></li>
                         <li><a href="">Pages</a></li>
@@ -92,10 +103,10 @@
                 </div>
                 <div class="navbar-end">
                     <div>
-                        <input type="text" placeholder="icons here">
+                        <p class="pr-5 text-2xl">o</p>
                     </div>
                     <div>
-                        <a class="shared-button">Button</a>
+                        <a class="shared-button text-xl font-bold">Get Ticket</a>
                     </div>
                 </div>
             </div>
@@ -103,7 +114,7 @@
     </header>
 
     <main>
-
+            
     </main>
 
     <footer>
