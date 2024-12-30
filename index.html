@@ -28,98 +28,139 @@
 </head> -->
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
-    <title>Simple Landing Page</title>
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        // Add custom colors here if needed
-                    }
-                }
-            },
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+  <title>Simple Landing Page</title>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            // Add custom colors here if needed
+          }
         }
-    </script>
+      },
+    }
+  </script>
 
-    <style>
-        .shared-button {
-            background-color: rgb(218, 51, 51);
-            padding-left: 15px;
-            padding-right: 15px;
-            padding-top: 10px;
-            padding-bottom: 10px;
-            border-radius: 8px;
-            color: white;
-        }
-        .fontManrope{
-            font-family: "Manrope", serif;
-        }
-    </style>
+  <style>
+    .shared-button {
+      background-color: rgb(218, 51, 51);
+      padding-left: 15px;
+      padding-right: 15px;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      border-radius: 8px;
+      color: white;
+    }
+
+    .fontManrope {
+      font-family: "Manrope", serif;
+    }
+  </style>
 </head>
 
 
 
 
 <body class="fontManrope">
-    <header class="max-w-screen-xl mx-auto">
-        <nav>
-            <div class="navbar bg-base-100">
-                <div class="navbar-start">
-                    <div class="dropdown">
-                        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
-                                stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M4 6h16M4 12h8m-8 6h16" />
-                            </svg>
-                        </div>
-                        <ul tabindex="0"
-                            class="menu menu-sm dropdown-content bg-base-100 font-bold text-base rounded-box z-[1] mt-3 w-52 p-2 shadow">
-                            <li><a href="" >Home</a></li>
-                            <li><a href="">About</a></li>
-                            <li><a href="">Pages</a></li>
-                            <li><a href="">Blog</a></li>
-                            <li><a href="">Contact</a></li>
-
-                        </ul>
-                    </div>
-                    <a class="text-4xl font-extrabold">Hockey<span class="text-red-500">’</span>s</a>
-                </div>
-                <div class="navbar-center hidden lg:flex">
-                    <ul class="menu menu-horizontal px-1 font-bold text-base">
-                        <li><a href="">Home</a></li>
-                        <li><a href="">About</a></li>
-                        <li><a href="">Pages</a></li>
-                        <li><a href="">Blog</a></li>
-                        <li><a href="">Contact</a></li>
-                    </ul>
-                </div>
-                <div class="navbar-end">
-                    <div>
-                        <p class="pr-5 text-2xl">o</p>
-                    </div>
-                    <div>
-                        <a class="shared-button text-xl font-bold">Get Ticket</a>
-                    </div>
-                </div>
+  <header class="max-w-screen-xl mx-auto">
+    <!-- navbar section -->
+    <section>
+      <div class="navbar p-0 bg-base-100">
+        <div class="navbar-start">
+          <div class="dropdown">
+            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
+              </svg>
             </div>
-        </nav>
-    </header>
+            <ul tabindex="0"
+              class="menu menu-sm dropdown-content bg-base-100 font-bold text-base rounded-box z-[1] mt-3 w-52 p-2 shadow">
+              <li><a href="">Home</a></li>
+              <li><a href="">About</a></li>
+              <li><a href="">Pages</a></li>
+              <li><a href="">Blog</a></li>
+              <li><a href="">Contact</a></li>
 
-    <main>
-            
-    </main>
+            </ul>
+          </div>
+          <a class="text-4xl font-extrabold">Hockey<span class="text-red-500">’</span>s</a>
+        </div>
+        <div class="navbar-center hidden lg:flex">
+          <ul class="menu menu-horizontal px-1 font-bold text-base">
+            <li><a href="">Home</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">Pages</a></li>
+            <li><a href="">Blog</a></li>
+            <li><a href="">Contact</a></li>
+          </ul>
+        </div>
+        <div class="navbar-end">
+          <div>
+            <p class="pr-5 text-2xl">o</p>
+          </div>
+          <div>
+            <a class="shared-button text-xl font-bold">Get Ticket</a>
+          </div>
+        </div>
+      </div>
+    </section>
 
-    <footer>
+    <!-- banner section -->
+    <section>
+      <div class="carousel w-full relative">
+        <div id="slide1" class="carousel-item relative w-full">
+          <img src="Images/1.png" class="w-full h-[550px]" />
+          <div class="absolute left-5 right-5 top-[90%] flex -translate-y-1/2 transform gap-5">
+            <a href="#slide4" class="btn btn-circle bg-black text-white hover:text-black">❮</a>
+            <a href="#slide2" class="btn btn-circle bg-black text-white hover:text-black">❯</a>
+          </div>
+        </div>
+        <div id="slide2" class="carousel-item relative w-full">
+          <img src="https://img.daisyui.com/images/stock/photo-1609621838510-5ad474b7d25d.webp" class="w-full" />
+          <div class="absolute left-5 right-5 top-[90%] flex -translate-y-1/2 transform gap-5">
+            <a href="#slide1" class="btn btn-circle bg-black text-white hover:text-black">❮</a>
+            <a href="#slide3" class="btn btn-circle bg-black text-white hover:text-black">❯</a>
+          </div>
+        </div>
+        <div id="slide3" class="carousel-item relative w-full">
+          <img src="https://img.daisyui.com/images/stock/photo-1414694762283-acccc27bca85.webp" class="w-full" />
+          <div class="absolute left-5 right-5 top-[90%] flex -translate-y-1/2 transform gap-5">
+            <a href="#slide2" class="btn btn-circle bg-black text-white hover:text-black">❮</a>
+            <a href="#slide4" class="btn btn-circle bg-black text-white hover:text-black">❯</a>
+          </div>
+        </div>
+        <div id="slide4" class="carousel-item relative w-full">
+          <img src="https://img.daisyui.com/images/stock/photo-1665553365602-b2fb8e5d1707.webp" class="w-full" />
+          <div class="absolute left-5 right-5 top-[90%] flex -translate-y-1/2 transform gap-5">
+            <a href="#slide3" class="btn btn-circle bg-black text-white hover:text-black">❮</a>
+            <a href="#slide1" class="btn btn-circle bg-black text-white hover:text-black">❯</a>
+          </div>
+        </div>
+      </div>
 
-    </footer>
+      <div class="bg-black absolute top-[450px] left-[720px] text-white w-[566px] space-y-2 rounded-lg p-5">
+        <h1 class="font-extrabold text-2xl">Meet all the heroes from the field</h1>
+        <p class="font-medium text-base">Dit amet consectetur. Condimentum dignissim adipiscing aliquam <br> turpis
+          placerat dolor. Purus urna in sit nullam proin. </p>
+      </div>
+    </section>
+  </header>
+
+  <main>
+
+  </main>
+
+  <footer>
+
+  </footer>
 </body>
 
 </html>
